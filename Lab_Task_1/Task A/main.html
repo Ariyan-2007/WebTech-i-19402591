@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <link href="style.css" rel ="stylesheet">
+        <link href='https://fonts.googleapis.com/css?family=Bevan' rel='stylesheet'>
+        <title>Lab Task 1</title>
+    </head>
+
+    <body>
+        
+            
+            
+        <form class="frame">
+            <p><span style="color: red">*</span> - Denotes Required Information</p>
+            <p> <span style="font-weight: bolder">> 1 Dontation</span>    > 2 Confirmation    > Thank You!</p>
+            <h3 style="color: red"> Donor Information</h3>
+
+            <div class="form">
+                <div style="float: left; text-align: right ; padding-right: 5px; padding-bottom: 10px" >
+                <label for="fname">First Name<span style="color: red">*</span></label><br>
+                <label for="lname">Last Name<span style="color: red">*</span></label><br>
+                <label for="company">Company</label><br>
+                <label for="address1">Address 1<span style="color: red">*</span></label><br>   
+                <label for="address2">Address 2</label><br>    
+                <label for="city">City<span style="color: red">*</span></label><br>
+                <label for="state">State<span style="color: red">*</span></label><br>
+                <label for="zip">Zip Code<span style="color: red">*</span></label><br>
+                <label for="country">Country<span style="color: red">*</span></label><br>
+                <label for="phone">Phone</label><br>
+                <label for="fax">Fax</label><br>
+                <label for="email">Email <span style="color: red">*</span></label><br>
+                </div>
+                <div>
+                <input type="text" id="fname" name="fname" value = "" ><br>               
+                <input type="text" id="lname" name="lname" value = ""><br>
+                <input type="text" id="company" name="company" value = ""><br>               
+                <input type="text" id="address1" name="address1" value = ""><br> 
+                <input type="text" id="address2" name="address2" value = ""><br>
+                <input type="text" id="city" name="city" value = ""><br>
+                <select id="state" name="state" size="1">
+                  <option value="dhaka">Dhaka</option>
+                  <option value="chittagong" selected>Chittagong</option>
+                  <option value="rajshahi">Rajshahi</option>
+                  <option value="sylhet">Sylhet</option>
+                </select><br>
+                <input type="text" id="zip" name="zip" value = ""><br>
+                <select id="country" name="country" size="1">
+                  <option value="bangladesh" selected>Bangladesh</option>
+                  <option value="india">India</option>
+                  <option value="malaysia">Malaysia</option>
+                  <option value="pakistan">Pakistan</option>
+                </select><br>
+                <input type="text" id="phone" name="phone" value = ""><br>
+                <input type="text" id="fax" name="fax" value = ""><br>
+                <input type="text" id="email" name="email" value = ""><br>
+                </div>
+                <label for="damount">Donation Amount<span style="color: red">*</span></label>
+                <input type="radio" id="none" name="damount" value="none">
+                <label for="none" style="font-weight: normal">None</label>
+                <input type="radio" id="$50" name="damount" value="$50">
+                <label for="$50" style="font-weight: normal">$50</label>
+                <input type="radio" id="$75" name="damount" value="$75">
+                <label for="$75" style="font-weight: normal">$75</label>
+                <input type="radio" id="$100" name="damount" value="$100">
+                <label for="$100" style="font-weight: normal">$100</label>
+                <input type="radio" id="$250" name="damount" value="$250">
+                <label for="$250" style="font-weight: normal">$250</label>
+                <input type="radio" id="other" name="damount" value="other">
+                <label for="other" style="font-weight: normal">Other</label><br>
+                <label for="oamount">Other Amount $</label>
+                <input type="text" id="oamount" name="oamount" value = ""><br>
+
+                <label for="recurring">Recurring Donation</label>
+                <input type="checkbox" id="recurring" name="recurring" value="recurring">
+                <label for="recurring" style="font-weight: normal">I'm interested in giving on a regular basis</label><br>
+                
+            </div>
+            <h3 style="color: red;"> Honorarium and Memorial Donation Information</h3>
+
+            <div class="form">
+                
+                <div style="float: left; text-align: right ; padding-right: 5px; padding-bottom: 10px" >
+                <label>I would like to make<br> this donation</label><br>
+                <label for="name1">Name</label><br>
+                <label for="acknowledge">Acknowledge Donation to</label><br>
+                <label for="address">Address</label><br>   
+                <label for="city1">City</label><br>    
+                <label for="state1">State</label><br>
+                <label for="zip1">Zip</label><br>
+                </div>
+                <div>
+                <input type="radio" id="honor" name="hm" value="honor">
+                <label for="honor" style="font-weight: normal">To Honor</label><br>
+                <input type="radio" id="memory" name="hm" value="memory">
+                <label for="memory" style="font-weight: normal">In Memory Of</label><br>                   
+                <input type="text" id="name1" name="name1" value = "" ><br>               
+                <input type="text" id="acknowledge" name="acknowledge" value = ""><br>
+                <input type="text" id="address" name="address" value = ""><br>               
+                <input type="text" id="city1" name="city1" value = ""><br> 
+                <select id="state1" name="state1" size="1">
+                  <option value="dhaka">Dhaka</option>
+                  <option value="chittagong" selected>Chittagong</option>
+                  <option value="rajshahi">Rajshahi</option>
+                  <option value="sylhet">Sylhet</option>
+                </select><br>
+                <input type="text" id="zip1" name="zip1" value = ""><br>
+                
+                </div>
+                
+            </div>
+            
+            <h3 style="color: red;"> Additional Information</h3>
+            <p>Please enter your name, company or organization as you would like it to appear in our publications:</p>
+            <div class ="form"> <label for="name2">Name</label> <input type="text" id="name2" name="name2" value = "" ><br> </div>
+            
+            <input type="checkbox" id="1" name="1" value="1">
+                <label for="1" style="font-weight: normal">I would like my gift to remain anonymous</label><br>
+            <input type="checkbox" id="2" name="2" value="2">
+                <label for="2" style="font-weight: normal">My employer offers a matching gift program. I will mail the matching gift form</label><br>
+            <input type="checkbox" id="3" name="3" value="3">
+                <label for="3" style="font-weight: normal">Please save the cost of acknowledging this gift by not mailing a thank you letter</label><br>
+            
+            <div class ="form"> 
+                <p for="comment" style="float: left">Comment &nbsp;</p> 
+                <textarea name="comment" value = "" rows="10" cols="50"></textarea><br> 
+                <p style="float: left"> How may we contact you? &nbsp;</p>
+                <div style="float: left">
+                    <input type="checkbox" id="4" name="4" value="4">
+                    <label for="4" style="font-weight: normal">E-mail</label><br>
+                    <input type="checkbox" id="5" name="5" value="5">
+                    <label for="5" style="font-weight: normal">Postal Mail</label><br>
+                    <input type="checkbox" id="6" name="6" value="6">
+                    <label for="6" style="font-weight: normal">Telephone</label><br>
+                    <input type="checkbox" id="7" name="7" value="7">
+                    <label for="7" style="font-weight: normal">Fax</label><br>
+                </div>
+                    
+            </div>
+            <br style="clear: both">
+            <input type="checkbox" id="8" name="8" value="8"> <label for="8" style="font-weight: normal">I would like information about volunteering with the </label><br>
+                
+                <div class ="form">
+                    <input type="reset">
+                    <input type="submit" value="Continue">
+                </div>
+            
+        </form>
+         
+        
+        
+    </body>
+
+
+
+</html>

@@ -1,0 +1,25 @@
+*{margin: 0; padding: 0;}
+
+.Cover
+{
+    font-family: Jomhuria;
+    font-size: 30px;
+    text-align: center;
+    padding: 25px;
+    background-color: darkgrey;
+    box-shadow: 5px 5px grey;
+    user-select: none;
+    
+}
+
+.Panel
+{
+    
+    font-family: Acme;
+    margin-left: 10px;
+    margin-top: 20px;
+    background-color: darkgrey;
+    box-shadow: 5px 5px grey;
+}
+td {width: 20% ; height: 55px; text-align: center;}
+td , th , table {border: 1px solid black; }

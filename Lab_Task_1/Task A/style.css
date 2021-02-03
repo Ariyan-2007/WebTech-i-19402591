@@ -1,0 +1,29 @@
+*{margin: 0; padding: 0;}
+
+
+
+.frame
+{
+    background-color: lightgray;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    font-family: monospace;
+    font-size: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    height: 1000px;
+    width: 75%;
+}
+
+.form
+{
+    margin-left: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+    font-weight: bold;
+    padding-top: 5px;
+    width: 75%;
+}
