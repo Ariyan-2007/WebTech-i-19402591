@@ -31,7 +31,7 @@ $user = fetchUser($_SESSION['uname']);
                     <li><a href="Profile.php" class="active">Profile</a></li>
                     <li><a href='../Controller/LogoutHandler.php'>Log Out</a></li>
                     <hr>
-                    <li><a href="EditProfile.php">Edit Profile</a></li>
+                    <li><a href="EditProfile.php" class="active2">Edit Profile</a></li>
                     <li><a href="DeleteAccount.php">Delete Account</a></li>
                 </ul>
             </nav>
@@ -40,22 +40,21 @@ $user = fetchUser($_SESSION['uname']);
                 <table>
                     <tr>
                         <th>Username</th>
-                        <!-- <td><input type="text"></td> -->
                         <td><?php echo $user['Username'] ?></td>
                     </tr>
                     <tr>
                         <th>Full Name</th>
-                        <td><?php echo $user['Full_Name'] ?></td>
+                        <td><input class="input" type="text" value="<?php echo $user['Full_Name'] ?>"></td>
                     </tr>
                         <th>Email</th>
-                        <td><?php echo $user['Email'] ?></td>
+                        <td><input class="input" type="text" size="25" value="<?php echo $user['Email'] ?>"></td>
                     </tr>
                         <th>Phone</th>
-                        <td><?php echo $user['Phone'] ?></td>
+                        <td><input class="input" type="text" value="<?php echo $user['Phone'] ?>"></td>
                     </tr>
                     <tr>
                         <th>Address</th>
-                        <td><?php echo $user['Address'] ?></td>
+                        <td><input class="input" type="text" size="40" value="<?php echo $user['Address'] ?>"></td>
                     </tr>
                 </table>
             </panel>

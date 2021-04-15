@@ -25,7 +25,7 @@ include("../Controller/SessionController1.php");
                     <li><a href="Home.php">Login</a></li>
                     <li><a href="Registration.php">Registration</a></li>
                     <li><a href="About.php">About Project</a></li>
-                    <li><a href="Contact.php">Contact Us</a></li>
+                    <li><a href="Contact.php" class="active">Contact Us</a></li>
                     <hr>
                 </ul>
             </nav>
@@ -34,7 +34,7 @@ include("../Controller/SessionController1.php");
                 <h3>Contact</h3>
                 <p>Email: ariyanjahangireng@gmail.com</p>
                 <p>Phone: +8801817274124</p>
-                <p>Instagram: @ariyan_t_survivor</p>
+                <p>Linkedin: <a href="https://www.linkedin.com/in/ariyan-jahangir-884550198/" style="text-decoration: none; color: black; font-weight: 600;" target="_blank">Ariyan Jahangir</a></p>
                 </form>
             </panel>
         </section>

@@ -27,7 +27,7 @@ VALUES (:uname, :fname, :email, :phone, :address, :pass)";
 
 function SearchUser($uname){
     $conn = db_conn();
-    $selectQuery = "SELECT Username FROM `flatowner` WHERE Username LIKE '%$uname%'";
+    $selectQuery = "SELECT Username FROM `flatowner` WHERE Username = '$uname'";
 
     
     try{
@@ -41,7 +41,7 @@ function SearchUser($uname){
 
 function VerifyPassword($uname){
     $conn = db_conn();
-    $selectQuery = "SELECT * FROM `flatowner` WHERE Username LIKE '%$uname%'";
+    $selectQuery = "SELECT * FROM `flatowner` WHERE Username = '$uname'";
 
     
     try{
@@ -55,7 +55,7 @@ function VerifyPassword($uname){
 
 function showUser($uname){
 	$conn = db_conn();
-	$selectQuery = "SELECT * FROM `flatowner` WHERE Username LIKE '%$uname%'";
+	$selectQuery = "SELECT * FROM `flatowner` WHERE Username = '$uname'";
     try {
         $stmt = $conn->query($selectQuery);
     } catch (PDOException $e) {

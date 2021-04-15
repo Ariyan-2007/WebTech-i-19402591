@@ -34,16 +34,18 @@
     -ms-flex: 1;
     flex: 1;
     background: rgb(161, 161, 226);
-    padding: 10px;
   }
 
   nav ul {
     list-style-type: none;
+    margin: 0;
     padding: 0;
+    width: auto;
+    padding: 10px;
   }
 
   nav li {
-      padding: 10px;
+      
       font-family: Poly;
       font-weight: 600;
       
@@ -52,8 +54,26 @@
   
 
   nav a {
+        display: block;
         text-decoration: none;
+        padding: 8px 16px;
         color: rgb(41, 37, 37);
+  }
+
+  li a.active {
+    background-color: rgb(58, 58, 156);
+    color: white;
+  }
+
+  li a.active2 {
+    border-bottom: 2px solid rgb(58, 58, 156);
+    display: inline-block;
+    line-height: 0.85;
+  }
+  
+  li a:hover:not(.active) {
+    background-color: rgb(91, 91, 202);
+    color: white;
   }
   
   panel {

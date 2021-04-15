@@ -39,6 +39,11 @@ function change(x)
             document.getElementById("rpassErr").style.color = "red";
         }       
     }
+    else if(!isNaN(a.charAt(0)) && x.name =="uname")
+    {
+        document.getElementById("unameErr").innerHTML = "First Letter must be an alphabetic character";
+        document.getElementById("unameErr").style.color = "red";
+    }
     else if(a!="" && x.name =="uname")
     {
         parse(a);        

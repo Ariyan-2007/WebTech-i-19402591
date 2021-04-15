@@ -148,7 +148,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
         else
         {
             $rpass = test_input($_POST["rpass"]);
-            $flag = 1;
         }
     }
 

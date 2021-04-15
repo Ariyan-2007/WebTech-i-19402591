@@ -10,6 +10,7 @@ include("../Controller/SessionController1.php");
     <head>
         <?php include("fonts.php")?>
         <link rel="stylesheet" href="../Content/Stylesheet1.css">
+        <link rel="stylesheet" href="../Content/Object.css">
         <title>BHMS</title>
         <script src="../Scripts/LoginHandler.js"></script>
     </head>
@@ -24,7 +25,7 @@ include("../Controller/SessionController1.php");
         <section>
             <nav>
                 <ul>
-                    <li><a href="Home.php">Login</a></li>
+                    <li><a href="Home.php" class="active">Login</a></li>
                     <li><a href="Registration.php">Registration</a></li>
                     <li><a href="About.php">About Project</a></li>
                     <li><a href="Contact.php">Contact Us</a></li>
@@ -39,7 +40,7 @@ include("../Controller/SessionController1.php");
                 <input type="text" id="uname" name="uname" value="<?php if (isset($_POST['uname'])) echo $_POST['uname']; ?>" onfocus="change(this)"  onkeyup="change(this)" onblur="revert(this)" ><br><br>
                 <label for="pass">Password:</label>
                 <input type="password" id="pass" name="pass" value="" onfocus="change(this)"  onkeyup="change(this)" onblur="revert(this)"><br><br>
-                <input type="submit" value="Submit" name="Login">
+                <input type="submit" value="Submit" name="Login" class="button">
                 </form>
                 <form style="margin-left:33.5%">
                 <span id="unameErr"><?php echo $unameErr;?></span><br>

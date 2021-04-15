@@ -24,7 +24,7 @@ include("../Controller/SessionController2.php");
         <section>
             <nav>
                 <ul>
-                    <li><a href="Dashboard.php">Dashboard</a></li>
+                    <li><a href="Dashboard.php" class="active">Dashboard</a></li>
                     <li><a href="Profile.php">Profile</a></li>
                     <li><a href='../Controller/LogoutHandler.php'>Log Out</a></li>
                     <hr>
