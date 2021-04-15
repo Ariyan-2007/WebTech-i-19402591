@@ -24,7 +24,7 @@ include("../Controller/SessionController1.php");
                 <ul>
                     <li><a href="Home.php">Login</a></li>
                     <li><a href="Registration.php">Registration</a></li>
-                    <li><a href="About.php">About Project</a></li>
+                    <li><a href="About.php" class="active">About Project</a></li>
                     <li><a href="Contact.php">Contact Us</a></li>
                     <hr>
                 </ul>

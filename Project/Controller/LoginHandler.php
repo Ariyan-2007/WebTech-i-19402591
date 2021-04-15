@@ -3,7 +3,7 @@
 require_once '../Model/Queries.php';
 
 $uname = $pass = "";
-$flag = 0;
+$flag = 1;
 $unameErr = $passErr = "";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST")
@@ -42,7 +42,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
         else
         {
             $pass = test_input($_POST["pass"]);
-            $flag = 1;
         }
     }
 

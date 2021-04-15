@@ -1,0 +1,14 @@
+.button {
+    background-color: rgb(58, 58, 156);
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 5%;
+    font-size: 11.5px;
+    margin: 2px 2px;
+    cursor: pointer;
+    font-family: 'PT Sans';
+  }

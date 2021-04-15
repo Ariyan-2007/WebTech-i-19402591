@@ -10,6 +10,7 @@ include("../Controller/SessionController1.php");
     <head>
         <?php include("fonts.php")?>
         <link rel="stylesheet" href="../Content/Stylesheet1.css">
+        <link rel="stylesheet" href="../Content/Object.css">
         <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
         <script type="text/javascript" src="../Scripts/RegistrationHandler.js" ></script>
         
@@ -27,7 +28,7 @@ include("../Controller/SessionController1.php");
             <nav>
                 <ul>
                     <li><a href="Home.php">Login</a></li>
-                    <li><a href="Registration.php">Registration</a></li>
+                    <li><a href="Registration.php" class="active">Registration</a></li>
                     <li><a href="About.php">About Project</a></li>
                     <li><a href="Contact.php">Contact Us</a></li>
                     <hr>
@@ -58,8 +59,8 @@ include("../Controller/SessionController1.php");
                 <label for="rpass">Re-Type Password:</label><span>*</span>
                 <input type="password" id="rpass" name="rpass" value="" onfocus="change(this)"  onkeyup="change(this)" onblur="revert(this)">
                 <br><br>
-                <input type="reset">
-                <input type="submit" value="Submit" name="CreateUser">
+                <input type="reset" class="button">
+                <input type="submit" value="Submit" name="CreateUser" class="button">
                 </form>
                 <form style="margin-left:33.5%">
                 <span id="unameErr"><?php echo $unameErr;?></span><br>
