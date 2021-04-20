@@ -17,10 +17,3 @@ function change(x)
     }
     
 }
-function revert(x) 
-{
-    if(x.name=="uname")
-        document.getElementById("unameErr").innerHTML = "";
-    else if(x.name=="pass")
-        document.getElementById("passErr").innerHTML = "";
-}

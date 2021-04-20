@@ -1,5 +1,3 @@
-var flag = 0;
-
 function change(x) 
 {
     var format = /[@,#,$,%]/;
@@ -108,23 +106,7 @@ function change(x)
     
     
 }
-function revert(x) 
-{
-    if(x.name=="uname")
-        document.getElementById("unameErr").innerHTML = "";
-        else if(x.name=="fname")
-        document.getElementById("fnameErr").innerHTML = "";
-    else if(x.name=="email")
-        document.getElementById("emailErr").innerHTML = "";
-    else if(x.name=="phone")
-        document.getElementById("phoneErr").innerHTML = "";
-    else if(x.name=="address")
-        document.getElementById("addressErr").innerHTML = "";
-    else if(x.name=="pass")
-        document.getElementById("passErr").innerHTML = "";
-    else if(x.name=="rpass")
-        document.getElementById("rpassErr").innerHTML = "";
-}
+
 
 function parse(x)
 {
@@ -134,19 +116,28 @@ function parse(x)
     {
         $.getJSON("../Content/Register.json", function(data)
         {
-            for(var index = 0; index< data.length; index++)
+            
+            if(data != null)
             {
-                if(data[index].uname == x)
+                for(var index = 0; index< data.length; index++)
                 {
-                    document.getElementById("unameErr").innerHTML = "Username Already Taken!";
-                    document.getElementById("unameErr").style.color = "red";
-                    break;
+                    if(data[index].uname == x)
+                    {
+                        document.getElementById("unameErr").innerHTML = "Username Already Taken!";
+                        document.getElementById("unameErr").style.color = "red";
+                        break;
+                    }
+                    else
+                    {
+                        document.getElementById("unameErr").innerHTML = "\u2713";
+                        document.getElementById("unameErr").style.color = "green";
+                    }
                 }
-                else
-                {
-                    document.getElementById("unameErr").innerHTML = "\u2713";
-                    document.getElementById("unameErr").style.color = "green";
-                }
+            }
+            else
+            {
+                document.getElementById("unameErr").innerHTML = "\u2713";
+                document.getElementById("unameErr").style.color = "green";
             }
 
         });
