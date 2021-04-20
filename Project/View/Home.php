@@ -1,6 +1,7 @@
 <?php
 session_start();
 include("../Controller/SessionController1.php");
+require("../Controller/LoginHandler.php");
 ?>
 
 
@@ -20,7 +21,6 @@ include("../Controller/SessionController1.php");
             <?php include("Header.php")?>
         </header>
         
-        <?php require("../Controller/LoginHandler.php"); ?>
 
         <section>
             <nav>
@@ -37,9 +37,9 @@ include("../Controller/SessionController1.php");
                 <h3>Login</h3>
                 <form class="form" name="login" style="float:left;" method="post"  action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
                 <label for="uname">Username:</label>
-                <input type="text" id="uname" name="uname" value="<?php if (isset($_POST['uname'])) echo $_POST['uname']; ?>" onfocus="change(this)"  onkeyup="change(this)" onblur="revert(this)" ><br><br>
+                <input type="text" id="uname" name="uname" value="<?php if (isset($_POST['uname'])) echo $_POST['uname']; ?>"  onkeyup="change(this)" ><br><br>
                 <label for="pass">Password:</label>
-                <input type="password" id="pass" name="pass" value="" onfocus="change(this)"  onkeyup="change(this)" onblur="revert(this)"><br><br>
+                <input type="password" id="pass" name="pass" value="" onkeyup="change(this)" ><br><br>
                 <input type="submit" value="Submit" name="Login" class="button">
                 </form>
                 <form style="margin-left:33.5%">

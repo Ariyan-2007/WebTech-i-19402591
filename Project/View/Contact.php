@@ -9,7 +9,9 @@ include("../Controller/SessionController1.php");
     <head>
         <?php include("fonts.php")?>
         <link rel="stylesheet" href="../Content/Stylesheet1.css">
+        <link rel="stylesheet" href="../Content/Stylesheet2.css">
         <title>BHMS</title>
+        <script src="../Scripts/ContactHandler.js"></script>
     </head>
 
     <body>
@@ -32,10 +34,18 @@ include("../Controller/SessionController1.php");
 
             <panel>
                 <h3>Contact</h3>
-                <p>Email: ariyanjahangireng@gmail.com</p>
-                <p>Phone: +8801817274124</p>
-                <p>Linkedin: <a href="https://www.linkedin.com/in/ariyan-jahangir-884550198/" style="text-decoration: none; color: black; font-weight: 600;" target="_blank">Ariyan Jahangir</a></p>
+                <form action=""> 
+                <select name="Owners" onchange="showOwner(this.value)">
+                    <option value="">Select an Owner:</option>
+                    <option value="Ariyan">Ariyan Jahangir</option>
+                    <option value="Sabiha">Sabiha Hazera Natasha</option>
+                    <option value="Mishal">Mishal Hasan</option>
+                    <option value="Turin">Fahmida Turin</option>
+                </select>
                 </form>
+                <br>
+                <div id="instruction">Select an owner to show their contact details..</div>
+                
             </panel>
         </section>
 

@@ -64,3 +64,33 @@ function showUser($uname){
     $row = $stmt->fetch(PDO::FETCH_ASSOC);
     return $row;
 }
+
+function editUser($uname, $data){
+    $conn = db_conn();
+    $selectQuery = "UPDATE `flatowner` set Full_Name = ?, Email = ?, Phone = ?, Address = ? where Username = ?";
+    try{
+        $stmt = $conn->prepare($selectQuery);
+        $stmt->execute([
+        	$data['fname'], $data['email'], $data['phone'], $data['address'], $uname
+        ]);
+    }catch(PDOException $e){
+        echo $e->getMessage();
+    }
+    
+    $conn = null;
+    return true;
+}
+
+function deleteUser($uname){
+	$conn = db_conn();
+    $selectQuery = "DELETE FROM `flatowner` WHERE `Username` = ?";
+    try{
+        $stmt = $conn->prepare($selectQuery);
+        $stmt->execute([$uname]);
+    }catch(PDOException $e){
+        echo $e->getMessage();
+    }
+    $conn = null;
+
+    return true;
+}

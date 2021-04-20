@@ -20,7 +20,7 @@
     .input{
         border : solid rgb(143, 143, 199);
         background-color: rgb(217, 217, 248);
-        border-radius: 10%;
+        border-radius: 13%;
         box-sizing: border-box;
         -webkit-box-sizing:border-box;
         -moz-box-sizing: border-box;
@@ -35,15 +35,9 @@
 
 
 .form2 {
-    margin-left: 30%;
     display: none;
-    width: 320px;
 }
 
 .form2 label{
-    float: left;
-}
-
-.form2 input{
-    float: right;
+    font-weight: 600;
 }

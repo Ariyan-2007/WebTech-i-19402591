@@ -17,7 +17,6 @@ include("../Controller/SessionController2.php");
     <body>
         <header>
             <?php include("Header.php")?>
-            <?php include("../Controller/SessionController2.php")?>
         </header>
     
 

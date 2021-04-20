@@ -1,7 +1,7 @@
 <?php
 session_start();
 include("../Controller/SessionController2.php");
-include("../Controller/ProfileHandler.php");
+require("../Controller/ProfileHandler.php");
 $user = fetchUser($_SESSION['uname']);
 ?>
 
@@ -20,7 +20,6 @@ $user = fetchUser($_SESSION['uname']);
     <body>
         <header>
             <?php include("Header.php")?>
-            <?php include("../Controller/SessionController2.php")?>
         </header>
     
 
@@ -40,7 +39,6 @@ $user = fetchUser($_SESSION['uname']);
                 <table>
                     <tr>
                         <th>Username</th>
-                        <!-- <td><input type="text"></td> -->
                         <td><?php echo $user['Username'] ?></td>
                     </tr>
                     <tr>
