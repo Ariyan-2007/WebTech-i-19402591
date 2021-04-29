@@ -1,0 +1,43 @@
+    th {
+        padding: 12px;
+        text-align: left;
+        background-color: rgb(58, 58, 156);
+        color: white;
+        font-weight: 500;
+        border: 2px solid #ddd;
+}
+
+    td {
+        border: 2px solid #ddd;
+        background-color: rgb(161, 161, 226);
+        padding: 8px;
+    }
+
+    td:hover {background-color: rgb(91, 91, 202);}
+
+    table {user-select: none; border-collapse: collapse; width: 100%; }
+    
+    .input{
+        border : solid rgb(143, 143, 199);
+        background-color: rgb(217, 217, 248);
+        border-radius: 13%;
+        box-sizing: border-box;
+        -webkit-box-sizing:border-box;
+        -moz-box-sizing: border-box;
+        line-height: 25px;
+   }
+
+.center{
+        margin-top: 5%;
+        align-self: center;
+        text-align: center;
+}
+
+
+.form2 {
+    display: none;
+}
+
+.form2 label{
+    font-weight: 600;
+}
