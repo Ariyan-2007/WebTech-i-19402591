@@ -1,0 +1,129 @@
+ header {
+    background-color: rgb(58, 58, 156);
+    padding: 20px;
+    text-align: center;
+    font-size: 25px;
+    font-family: Yanone Kaffeesatz;
+    font-weight: 700;
+    color: rgb(214, 205, 205);
+    user-select: none;
+  }
+
+ footer {
+    background-color: rgb(58, 58, 156);
+    padding: 10px;
+    text-align: center;
+    font-family: Yanone Kaffeesatz;
+    color: rgb(214, 205, 205);
+    user-select: none;
+  }
+
+ section {
+    display: -webkit-flex;
+    display: flex;
+  }
+
+  @media (max-width: 600px) {
+    section {
+      -webkit-flex-direction: column;
+      flex-direction: column;
+    }
+  }
+ nav {
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    background: rgb(161, 161, 226);
+  }
+
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: auto;
+    padding: 10px;
+  }
+
+  nav li {
+      
+      font-family: Poly;
+      font-weight: 600;
+      
+  }
+  
+  
+
+  nav a {
+        display: block;
+        text-decoration: none;
+        padding: 8px 16px;
+        color: rgb(41, 37, 37);
+  }
+
+  li a.active {
+    background-color: rgb(58, 58, 156);
+    color: white;
+  }
+
+  li a.active2 {
+    border-bottom: 2px solid rgb(58, 58, 156);
+    display: inline-block;
+    line-height: 0.85;
+  }
+  
+  li a:hover:not(.active) {
+    background-color: rgb(91, 91, 202);
+    color: white;
+  }
+  
+  panel {
+    -webkit-flex: 3;
+    -ms-flex: 3;
+    flex: 3;
+    background-color: #f1f1f1;
+    padding: 10px;
+    font-family: poly;
+  }
+
+.form {
+    margin: 0 0;
+    width: 320px;
+}
+
+.form label{
+    text-align: right;
+    float: left;
+}
+span{
+  color: red;
+  text-align: left;
+  
+}
+.form input{
+    text-align: left;
+    float: right;
+}
+
+
+
+.pform {
+    text-align: center;
+    font-family: Original Surfer;
+    margin-bottom: 10px;
+}
+
+.pform label {
+    font-weight: 600;
+}
+.pform input{
+    width: 50%;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    padding: 5px 5px;
+    margin-bottom: 5px;
+}
+
+.pform span {
+    font-family: Poly;
+}
